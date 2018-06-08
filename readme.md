@@ -1,6 +1,6 @@
 # portfolio-page
 
-Portfolio Site
+Eric Hendrickson Portfolio Site
 
 ## Setup
 
