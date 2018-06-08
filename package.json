@@ -1,0 +1,44 @@
+{
+  "name": "portfolio-page",
+  "description": "Portfolio Site",
+  "version": "0.0.1",
+  "author": "Eric Hendrickson",
+  "ava": {
+    "verbose": "true"
+  },
+  "bugs": "https://github.com/hendrickson02/portfolio-page/issues",
+  "dependencies": {
+    "autoprefixer": "^8.6.1",
+    "bootstrap": "^4.1.1",
+    "bootstrap.native": "^2.0.23",
+    "eslint": "^4.19.1",
+    "node-sass": "^4.9.0",
+    "reshape-standard": "^3.3.0",
+    "sass-loader": "^7.0.3",
+    "spike": "^2.2.1",
+    "spike-css-standards": "^4.0.0",
+    "spike-html-standards": "^0.3.7",
+    "spike-js-standards": "^2.1.0",
+    "spike-optimize": "^0.1.2",
+    "spike-page-id": "^1.1.0"
+  },
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "rimraf": "^2.6.1",
+    "snazzy": "^7.0.0",
+    "standard": "^10.0.2"
+  },
+  "homepage": "https://github.com/hendrickson02/portfolio-page",
+  "main": "app.js",
+  "private": true,
+  "repository": "https://github.com/hendrickson02/portfolio-page",
+  "scripts": {
+    "lint": "standard | snazzy",
+    "precommit": "npm run lint -s",
+    "pretest": "npm run lint -s",
+    "test": "NODE_ENV=test ava",
+    "start": "spike watch",
+    "build": "spike compile",
+    "prod": "NODE_ENV=production spike compile -e production"
+  }
+}
