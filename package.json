@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "ava": "^0.19.1",
+    "bootstrap.native-loader": "^1.0.7",
     "rimraf": "^2.6.1",
     "snazzy": "^7.0.0",
     "standard": "^10.0.2"

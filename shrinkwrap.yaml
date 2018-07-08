@@ -14,6 +14,7 @@ dependencies:
   spike-page-id: 1.1.0
 devDependencies:
   ava: 0.19.1
+  bootstrap.native-loader: 1.0.7
   rimraf: 2.6.2
   snazzy: 7.1.1
   standard: 10.0.3
@@ -1155,6 +1156,12 @@ packages:
       node: '>=4.0.0'
     resolution:
       integrity: sha512-Z5BTk6ZRe4tXXQlkqftmsAUANpXmuwlsF5Oov8ThoMbQRzdGTA1ngYRW160GexgOgjsFOKJz0LYhoNi+2AMBUw==
+  /bootstrap.native-loader/1.0.7:
+    dev: true
+    peerDependencies:
+      bootstrap.native: ^2.0.21
+    resolution:
+      integrity: sha512-P8EnLyAUnwLDeR//cyo+RzwfIVkaUpBrbhry/EbsjZDNLh5HIG6SAmTYU9bZyRRfGlX0ReDBK/SOuQ64qxksRg==
   /bootstrap.native/2.0.23:
     dev: false
     resolution:
@@ -8964,6 +8971,7 @@ specifiers:
   ava: ^0.19.1
   bootstrap: ^4.1.1
   bootstrap.native: ^2.0.23
+  bootstrap.native-loader: ^1.0.7
   eslint: ^4.19.1
   node-sass: ^4.9.0
   reshape-standard: ^3.3.0

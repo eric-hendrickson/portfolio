@@ -18,20 +18,31 @@ $blockquote-font-size: $font-size-base;
 
 $link-color: #a13d61;
 
+$image-relative: "../img";
+
+@mixin background-image($image, $background-position, $background-color) {
+	background-image: url('#{$image-relative}/#{$image}');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 0;
+    padding-bottom: 40%;
+}
+
 body {
 	background-color: $body-background;
 }
 
 header {
-	background-color: $secondary-background;
+	// @include background-image("sandiego.jpg", right, $secondary-background);
+	background-color: $body-background;
 	display: flex;
 }
 
 nav {
 	background-color: $navbar-background;
 	color: $text-color;
+	height: 80px;
 }
-
 
 footer {
 	background-color: $footer-background;
@@ -41,6 +52,7 @@ footer {
 
 .content {
 	background-color: $content-background;
+	padding-bottom: 50px;
 }
 
 .content-wrap {
@@ -51,6 +63,23 @@ footer {
 	width: 50%;
 }
 
+.intro-text {
+	text-align: left; 
+	padding: 40px;
+}
+
 .nav-link {
 	color: $text-color;
+}
+
+#profile-image {
+	border-radius: 50%;
+	width: 50%;
+}
+
+header .container {
+	padding-top: 7%;
+	padding-bottom: 7%;
+	color: white;
+	text-align: center;
 }

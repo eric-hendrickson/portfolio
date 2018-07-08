@@ -11,8 +11,16 @@ module.exports = {
   ignore: ['**/layout.html', '**/_*', '**/.*', 'readme.md', 'yarn.lock', 'package-lock.json'],
   module: {
     rules: [
-		{ test: /\.scss/, use: [{ loader: 'sass-loader' }] }
-	]
+		{ 
+			test: /\.scss/, 
+			use: [{ loader: 'sass-loader' }] },
+		{
+			test: /bootstrap\.native/,
+			use: [{
+			  loader: 'bootstrap.native-loader'
+			}],
+		},
+	],
   },
   reshape: htmlStandards({
     parser: false,
