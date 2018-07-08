@@ -8,7 +8,7 @@ const env = process.env.SPIKE_ENV
 module.exports = {
   devtool: 'source-map',
   matchers: { html: '*(**/)*.html', css: '*(**/)*.scss' },
-  ignore: ['**/layout.html', '**/_*', '**/.*', 'readme.md', 'yarn.lock', 'package-lock.json'],
+  ignore: ['**/layout.html', '**/_*', '**/.*', 'README.md', 'yarn.lock', 'package-lock.json', 'shrinkwrap.yaml'],
   module: {
     rules: [
 		{ 
