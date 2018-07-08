@@ -20,21 +20,12 @@ $link-color: #a13d61;
 
 $image-relative: "../img";
 
-@mixin background-image($image, $background-position, $background-color) {
-	background-image: url('#{$image-relative}/#{$image}');
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 0;
-    padding-bottom: 40%;
-}
-
 body {
 	background-color: $body-background;
 }
 
 header {
-	// @include background-image("sandiego.jpg", right, $secondary-background);
-	background-color: $body-background;
+	background: linear-gradient($body-background, $navbar-background);
 	display: flex;
 }
 
@@ -63,7 +54,7 @@ footer {
 }
 
 .intro-text {
-	text-align: left; 
+	// text-align: left; 
 	padding: 40px;
 }
 
@@ -73,12 +64,16 @@ footer {
 
 #profile-image {
 	border-radius: 50%;
-	width: 50%;
+	width: 150px;
 }
 
 header .container {
-	padding-top: 7%;
-	padding-bottom: 7%;
+	padding-top: 20px;
 	color: white;
 	text-align: center;
+}
+
+header .container .row {
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
