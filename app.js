@@ -13,7 +13,10 @@ module.exports = {
     rules: [
 		{ 
 			test: /\.scss/, 
-			use: [{ loader: 'sass-loader' }] },
+			use: [{ 
+				loader: 'sass-loader' 
+			}],
+		},
 		{
 			test: /bootstrap\.native/,
 			use: [{

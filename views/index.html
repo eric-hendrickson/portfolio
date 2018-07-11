@@ -11,7 +11,7 @@
 		<header>
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-3">
+					<div class="col-md-3">
 						<img class="img-responsive" id="profile-image" src="./img/profile.jpg" alt="">
 					</div>
 					<div class="col-sm-9">
@@ -26,7 +26,165 @@
 	</block>
 
 	<block name="content">
-		<h1>Hello, World!</h1>
-		<button class="btn btn-primary">Click me!</button>
+		<section id="about">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<h2>About</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6">
+						<p>I am a Linguist/ESL teacher turned developer and a San Diego native. While living and working in China teaching English to Chinese and Korean university students, I discovered Linux, figured out how to use the command line, and taught myself bash scripting.</p>
+					</div>
+					<div class="col-sm-6">
+						<p>Following my return to San Diego I studied Java, Ruby on Rails, and Javascript. I have experience building apps using Ruby on Rails, designing APIs with Spring Boot Java, and building and deploying Node.js serverless APIs using AWS Lambda and API Gateway.</p>
+					</div>
+				</div>
+				<!-- <br>
+				<div class="row">
+					<div class="form-group col-xs-12 text-center">
+					<a href="/resume.pdf" download="EricHendricksonResume"><button class="btn btn-success btn-lg">Download Resume</button></a>
+					</div>
+				</div> -->
+			</div>
+		</section>
+		<section id="skills">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<h2>Skills</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3">
+						<ul>
+							<li>HTML/CSS:</li>
+							<ul>
+								<li>Handlebars</li>
+								<li>JSX</li>
+								<li>SASS</li>
+							</ul>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul>
+							<li>Javascript</li>
+							<ul>
+								<li>jQuery</li>
+								<li><a href="https://mithril.js.org/">Mithril</a></li>
+								<li>Node.js</li>
+								<li>React</li>
+								<li><a href="https://www.spike.cf/">Spike</a></li>
+							</ul>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul>
+							<li>Ruby</li>
+							<ul>
+								<li>Jekyll</li>
+								<li>Rails</li>
+							</ul>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul>
+							<li>Java</li>
+							<ul>
+								<li>Android Studio</li>
+								<li>Maven</li>
+								<li>Spring Boot</li>
+							</ul>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul>
+							<li>Databases</li>
+							<ul>
+								<li>Postgres</li>
+								<li>DynamoDB</li>
+							</ul>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul>
+							<li>AWS</li>
+							<ul>
+								<li>API Gateway</li>
+								<li>CloudFormation</li>
+								<li>Lambda</li>
+								<li>Route53</li>
+								<li>S3</li>
+							</ul>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul>
+							<li>Dev Ops</li>
+							<ul>
+								<li>Linux</li>
+								<li>Bash</li>
+								<li>Docker</li>
+								<li>Elasticsearch</li>
+							</ul>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul>
+							<li>Other</li>
+							<ul>
+								<li>WordPress</li>
+							</ul>
+						</ul>
+					</div>
+				</div>
+				<br>
+			</div>			
+		</section>
+		<section id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<h2>Contact Me</h2>
+					</div>
+				</div>
+
+				<form name="sentMessage" id="contactForm" novalidate>
+					<div class="row control-group">
+						<div class="form-group col-sm-6 controls">
+							<input type="text" class="form-control" placeholder="First Name" id="firstName" required data-validation-required-message="Please enter your first name.">
+						</div>
+						<div class="form-group col-sm-6 controls">
+							<input type="text" class="form-control" placeholder="Last Name" id="lastName" required data-validation-required-message="Please enter your last name.">
+						</div>
+					</div>
+					<div class="row control-group">
+						<div class="form-group col-sm-6 controls">
+							<input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+						</div>
+						<div class="form-group col-sm-6 controls">
+							<input type="email" class="form-control" placeholder="Phone" id="phone">
+						</div>
+					</div>
+					<div class="row control-group">
+						<div class="form-group col-sm-12 controls">
+							<input type="tel" class="form-control" placeholder="Subject" id="subject" required data-validation-required-message="Please say why you want to contact me.">
+						</div>
+					</div>
+					</div>
+					<div class="row control-group">
+						<div class="form-group col-sm-12 controls">
+							<textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+						</div>
+					</div>
+					<div class="row control-group text-center">
+					<div class="form-group col-sm-12">
+						<button type="submit" class="btn btn-primary btn-lg">Send</button>
+					</div>
+				</form>
+			</div>
+
+		</section>
 	</block>
 </extends>
