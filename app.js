@@ -22,7 +22,7 @@ module.exports = {
 			use: [{
 			  loader: 'bootstrap.native-loader'
 			}],
-		},
+		}
 	],
   },
   reshape: htmlStandards({
