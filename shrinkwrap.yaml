@@ -15,7 +15,6 @@ dependencies:
 devDependencies:
   ava: 0.19.1
   bootstrap.native-loader: 1.0.7
-  file-loader: 1.1.11
   rimraf: 2.6.2
   snazzy: 7.1.1
   standard: 10.0.3
@@ -138,15 +137,6 @@ packages:
       ajv: ^6.0.0
     resolution:
       integrity: sha1-6GuBnGAs+IIa1jdBNpjx3sAhhHo=
-  /ajv-keywords/3.2.0/ajv@6.5.2:
-    dependencies:
-      ajv: 6.5.2
-    dev: true
-    id: registry.npmjs.org/ajv-keywords/3.2.0
-    peerDependencies:
-      ajv: ^6.0.0
-    resolution:
-      integrity: sha1-6GuBnGAs+IIa1jdBNpjx3sAhhHo=
   /ajv/4.11.8:
     dependencies:
       co: 4.6.0
@@ -172,15 +162,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-VDUX1oSajablmiyFyED9L1DFndg0P9h7p1F+NO8FkIzei6EPrR6Zu1n18rd5P8PqaSRd/FrWv3G1TVBqpM83gA==
-  /ajv/6.5.2:
-    dependencies:
-      fast-deep-equal: 2.0.1
-      fast-json-stable-stringify: 2.0.0
-      json-schema-traverse: 0.4.1
-      uri-js: 4.2.2
-    dev: true
-    resolution:
-      integrity: sha512-hOs7GfvI6tUI1LfZddH82ky6mOMyTuY0mk7kE2pWpmhhUSkumzaTO5vbVwij39MdwPQWCV4Zv57Eo06NtL/GVA==
   /align-text/0.1.4:
     dependencies:
       kind-of: 3.2.2
@@ -1123,6 +1104,7 @@ packages:
     resolution:
       integrity: sha1-QIZrnhueC1W0gYlDEeaPr/rrxSI=
   /big.js/3.2.0:
+    dev: false
     resolution:
       integrity: sha512-+hN/Zh2D08Mx65pZ/4g5bsmNiZUuChDiQfTUQ7qJr4/kuopCr88xZsAXv6mBoZEsUI4OuGHlX59qE94K2mMW8Q==
   /binary-extensions/1.11.0:
@@ -2434,6 +2416,7 @@ packages:
     resolution:
       integrity: sha1-ysmvh2LIWDYYcAPI3+GT5eLq5d8=
   /emojis-list/2.1.0:
+    dev: false
     engines:
       node: '>= 0.10'
     resolution:
@@ -3033,9 +3016,11 @@ packages:
     resolution:
       integrity: sha1-wFNHeBfIa1HaqFPIHgWbcz0CNhQ=
   /fast-deep-equal/2.0.1:
+    dev: false
     resolution:
       integrity: sha1-ewUhjd+WZ79/Nwv3/bLLFf3Qqkk=
   /fast-json-stable-stringify/2.0.0:
+    dev: false
     resolution:
       integrity: sha1-1RQsDK7msRifh9OnYREGT4bIu/I=
   /fast-levenshtein/2.0.6:
@@ -3065,17 +3050,6 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-w5KZDD5oR4PYOLjISkXYoEhFg2E=
-  /file-loader/1.1.11:
-    dependencies:
-      loader-utils: 1.1.0
-      schema-utils: 0.4.5
-    dev: true
-    engines:
-      node: '>= 4.3 < 5.0.0 || >= 5.10'
-    peerDependencies:
-      webpack: ^2.0.0 || ^3.0.0 || ^4.0.0
-    resolution:
-      integrity: sha512-TGR4HU7HUsGg6GCOPJnFk06RhWgEWFLAGWiT6rcD+GRC2keU3s9RGJ+b3Z6/U73jwwNb2gKLJ7YCrp+jvU4ALg==
   /filename-regex/2.0.1:
     engines:
       node: '>=0.10.0'
@@ -4482,10 +4456,6 @@ packages:
     dev: false
     resolution:
       integrity: sha1-NJptRMU6Ud6JtAgFxdXlm0F9M0A=
-  /json-schema-traverse/0.4.1:
-    dev: true
-    resolution:
-      integrity: sha512-xbbCH5dCYU5T8LcEhhuh7HJ88HXuW3qsI3Y0zOZFKfZEHcpWiHU/Jxzk629Brsab/mMiHQti9wMP+845RPe3Vg==
   /json-schema/0.2.3:
     dev: false
     resolution:
@@ -4684,6 +4654,7 @@ packages:
       big.js: 3.2.0
       emojis-list: 2.1.0
       json5: 0.5.1
+    dev: false
     engines:
       node: '>=4.0.0'
     resolution:
@@ -6447,6 +6418,7 @@ packages:
     resolution:
       integrity: sha1-wNWmOycYgArY4esPpSachN1BhF4=
   /punycode/2.1.1:
+    dev: false
     engines:
       node: '>=6'
     resolution:
@@ -7315,17 +7287,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==
-  /schema-utils/0.4.5:
-    dependencies:
-      ajv: 6.5.2
-      ajv-keywords: /ajv-keywords/3.2.0/ajv@6.5.2
-    dev: true
-    engines:
-      node: '>= 4.8.0 || >= 6.9.0 || >= 8.9.0'
-    peerDependencies:
-      webpack: ^2.0.0 || ^3.0.0 || ^4.0.0
-    resolution:
-      integrity: sha512-yYrjb9TX2k/J1Y5UNy3KYdZq10xhYcF8nMpAW6o3hy6Q8WSIEf9lJHG/ePnOBfziPM3fvQwfOwa13U/Fh8qTfA==
   /schema-utils/0.4.5/webpack@3.12.0:
     dependencies:
       ajv: 6.5.0
@@ -8571,6 +8532,7 @@ packages:
   /uri-js/4.2.2:
     dependencies:
       punycode: 2.1.1
+    dev: false
     resolution:
       integrity: sha512-KY9Frmirql91X2Qgjry0Wd4Y+YTdrdZheS8TFwvkbLWf/G5KNJDCh6pKL5OZctEW4+0Baa5idK2ZQuELRwPznQ==
   /urix/0.1.0:
@@ -9011,7 +8973,6 @@ specifiers:
   bootstrap.native: ^2.0.23
   bootstrap.native-loader: ^1.0.7
   eslint: ^4.19.1
-  file-loader: ^1.1.11
   node-sass: ^4.9.0
   reshape-standard: ^3.3.0
   rimraf: ^2.6.1
