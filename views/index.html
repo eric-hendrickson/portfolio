@@ -144,13 +144,43 @@
 			</div>			
 		</section>
 
-		<section class="success" id="portfolio">
+		<section class="success" id="projects">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12 text-center">
 						<h2>Projects</h2>
 						<hr>
 					</div>					
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-sm-6 portfolio-item">
+					  <a class="portfolio-link" data-toggle="modal" href="#portfolio">
+						<div class="portfolio-hover">
+						  <div class="portfolio-hover-content">
+							<i class="fa fa-plus fa-3x"></i>
+						  </div>
+						</div>
+						<img class="img-fluid" src="img/profile.jpg" alt="">
+					  </a>
+					  <div class="portfolio-caption text-center">
+						<h4>Portfolio Page</h4>
+						<p class="text-muted">Static Page</p>
+					  </div>
+					</div>
+					<div class="col-md-4 col-sm-6 portfolio-item">
+					  <a class="portfolio-link" data-toggle="modal" href="#hidIt">
+						<div class="portfolio-hover">
+						  <div class="portfolio-hover-content">
+							<i class="fa fa-plus fa-3x"></i>
+						  </div>
+						</div>
+						<img class="img-fluid" src="img/projects/ghost.png" alt="">
+					  </a>
+					  <div class="portfolio-caption text-center">
+						<h4>HidIt</h4>
+						<p class="text-muted">Chrome Plugin</p>
+					  </div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -200,5 +230,68 @@
 			</div>
 
 		</section>
+	</block>
+
+	<block name="modals">
+		<div class="portfolio-modal modal fade" id="portfolio" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="close-modal" data-dismiss="modal">
+						<div class="lr">
+						<div class="rl"></div>
+						</div>
+					</div>
+					<div class="container text-center">
+						<div class="row">
+							<div class="col-lg-8 mx-auto">
+								<div class="modal-body">
+								<h2 class="text-uppercase">Portfolio Page</h2>
+								<p class="item-intro text-muted">Static page generated with Spike.</p>
+								<img class="img-fluid d-block mx-auto" src="img/profile.jpg" alt="">
+								<p>My personal portfolio page, a static site generated using Spike.js. This page was generated using AWS S3, CloudFront, and Route 53. Form utilizes an API created using AWS API Gateway and Lambda, utilizing SES to send email.</p>
+								<ul class="list-inline">
+									<li><a href="">Code</a></li>
+									<li><a href="">Site</a></li>
+								</ul>
+								<button class="btn btn-primary" data-dismiss="modal" type="button">
+									<i class="fa fa-times"></i>
+									Close Project</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="portfolio-modal modal fade" id="hidIt" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="close-modal" data-dismiss="modal">
+						<div class="lr">
+						<div class="rl"></div>
+						</div>
+					</div>
+					<div class="container text-center">
+						<div class="row">
+							<div class="col-lg-8 mx-auto">
+								<div class="modal-body">
+								<h2 class="text-uppercase">HidIt</h2>
+								<p class="item-intro text-muted">Chrome plugin written with jQuery.</p>
+								<img class="img-fluid d-block mx-auto" src="img/projects/ghost.png" alt="">
+								<p>HidIt is a Google Chrome Extension written in Javascript/jQuery that allows the user to turn virtually any web page into an interactive flash card. Simply click a word to cause it to disappear. Click it again to cause the word to reappear. If you need a little help, hover the mouse over the whitespace to see the word in a different color.</p>
+								<ul class="list-inline">
+									<li><a href="">Code</a></li>
+								</ul>
+								<button class="btn btn-primary" data-dismiss="modal" type="button">
+									<i class="fa fa-times"></i>
+									Close Project</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</block>
 </extends>
