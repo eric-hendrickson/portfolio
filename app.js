@@ -1,9 +1,10 @@
 const autoprefixer = require('autoprefixer')
 const htmlStandards = require('spike-html-standards')
-const cssStandards = require('spike-css-standards')
 const jsStandards = require('spike-js-standards')
 const pageId = require('spike-page-id')
 const env = process.env.SPIKE_ENV
+
+const projects = require('./assets/js/projects.js');
 
 module.exports = {
   devtool: 'source-map',
@@ -27,7 +28,12 @@ module.exports = {
   },
   reshape: htmlStandards({
     parser: false,
-    locals: (ctx) => { return { pageId: pageId(ctx), foo: 'bar' } },
+    locals: (ctx) => { 
+		return { 
+			pageId: pageId(ctx), 
+			projects: projects 
+		} 
+	},
     minify: env === 'production'
   }),
   postcss: { plugins: [autoprefixer()] },
