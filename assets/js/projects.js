@@ -1,5 +1,19 @@
 module.exports = [
 	{
+		id: 'placesOfInterest',
+		title: 'Places of Interest',
+		type: 'Ionic Mobile App',
+		image: 'img/projects/places-of-interest.png',
+		shortDescription: 'Ionic App for finding nearby stores and other places.',
+		longDescription: 'blah',
+		links: [
+			{
+				text: 'Code',
+				url: 'https://github.com/hendrickson02/ionic-places-of-interest'
+			}
+		]
+	},
+	{
 		id: 'portfolioPage',
 		title: 'Portfolio Page',
 		type: 'Static Page',
