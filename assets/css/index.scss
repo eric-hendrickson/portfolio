@@ -27,6 +27,7 @@ body {
 header {
 	background: linear-gradient($body-background, $navbar-background);
 	display: flex;
+	text-align: center;
 }
 
 nav {
@@ -38,6 +39,8 @@ footer {
 	background-color: $footer-background;
 	color: $text-color;
 	display: flex;
+	padding-top: 20px;
+	text-align: center;
 }
 
 section {
@@ -55,6 +58,10 @@ section {
 
 .img-responsive {
 	width: 50%;
+}
+
+.intro-text {
+	padding-top: 10px;
 }
 
 .nav-link {

@@ -7,13 +7,13 @@
 		<header>
 			<div class="container">
 				<div class="row">
-					<div class="col-md-3">
+					<div class="col-md-3 col-centered">
 						<img class="img-responsive" id="profile-image" src="./img/profile.jpg" alt="">
 					</div>
-					<div class="col-sm-9">
+					<div class="col-md-9 col-centered">
 						<div class="intro-text">
 							<div class="h3 name"><b>Eric Hendrickson</b></div>
-							<div class="h3 skills"><b>Java, Ruby on Rails, and Node.js Developer</b></div>
+							<div class="h3 skills"><b>Node.js, Ruby on Rails, and Java Developer</b></div>
 						</div>
 					</div>
 				</div>
@@ -31,11 +31,8 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-sm-6">
-						<p>I am a Linguist/ESL teacher turned developer and a San Diego native. While living and working in China teaching English to Chinese and Korean university students, I discovered Linux, figured out how to use the command line, and taught myself bash scripting.</p>
-					</div>
-					<div class="col-sm-6">
-						<p>Following my return to San Diego I studied Java, Ruby on Rails, and Javascript. I have experience building apps using Ruby on Rails, designing APIs with Spring Boot Java, and building and deploying Node.js serverless APIs using AWS Lambda and API Gateway.</p>
+					<div class="col-sm-12">
+						<p>I am a Linguist/ESL teacher turned software developer and a San Diego native. I have formal training in Java, Ruby on Rails, and Javascript, as well as self taught in Linux, Python, and Shell scripting. I am experienced in building apps using Ruby on Rails, designing APIs with Spring Boot Java, and building and deploying Node.js serverless APIs using AWS Lambda and API Gateway. My current passions are working with the AWS Cloud, learning new Javascript and Python frameworks, and studying data science and machine learning to build smarter applications.</p>
 					</div>
 				</div>
 			</div>
@@ -176,10 +173,12 @@
 					<div class="col-sm-12 text-center">
 						<h2>Contact Me</h2>
 						<hr>
+						<h5><b>Email:</b> eric[at]hendrickson[dot]online</h5>
+						<p>(Form to come soon)</p>
 					</div>
 				</div>
 
-				<form name="sentMessage" id="contactForm" novalidate>
+				<!-- <form name="sentMessage" id="contactForm">
 					<div class="row control-group">
 						<div class="form-group col-sm-6 controls">
 							<input type="text" class="form-control" placeholder="First Name" id="firstName" required data-validation-required-message="Please enter your first name.">
@@ -193,12 +192,12 @@
 							<input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
 						</div>
 						<div class="form-group col-sm-6 controls">
-							<input type="email" class="form-control" placeholder="Phone" id="phone">
+							<input type="tel" class="form-control" placeholder="Phone" id="phone">
 						</div>
 					</div>
 					<div class="row control-group">
 						<div class="form-group col-sm-12 controls">
-							<input type="tel" class="form-control" placeholder="Subject" id="subject" required data-validation-required-message="Please say why you want to contact me.">
+							<input type="text" class="form-control" placeholder="Subject" id="subject" required data-validation-required-message="Please say why you want to contact me.">
 						</div>
 					</div>
 					</div>
@@ -209,9 +208,9 @@
 					</div>
 					<div class="row control-group text-center">
 					<div class="form-group col-sm-12">
-						<button type="submit" class="btn btn-primary btn-lg">Send</button>
+						<input type="submit" value="Send" class="btn btn-primary btn-lg" onclick="sendEmail()">
 					</div>
-				</form>
+				</form> -->
 			</div>
 		</section>
 	</block>
